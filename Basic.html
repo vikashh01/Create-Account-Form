@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Demo Document</title>
+</head>
+<body>
+
+    <form action="#">
+
+            <h1>Create Account</h1>
+            <br><br>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <br><br>
+
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <select id="age" name="age">
+                <option value="" disabled selected>Select age</option>
+                ${[...Array(13)].map((_, i) => `<option value="${18 + i}">${18 + i}</option>`).join('\n')}
+            </select>
+            <br><br>
+
+            <label>Subjects:</label><br>
+            <input type="checkbox" id="math" name="subject" value="Mathematics">
+            <label for="math">Mathematics</label>
+
+            <input type="checkbox" id="physics" name="subject" value="Physics">
+            <label for="physics">Physics</label>
+
+            <input type="checkbox" id="chemistry" name="subject" value="Chemistry">
+            <label for="chemistry">Chemistry</label>
+
+            <input type="checkbox" id="biology" name="subject" value="Biology">
+            <label for="biology">Biology</label>
+            <br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea>
+            <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
